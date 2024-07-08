@@ -1,0 +1,115 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0 ;}
+    100% { opacity: 1; }
+  }
+
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.topRowContainer {
+    display: flex;
+    align-items: center;
+
+}
+
+.headingText {
+    color: white;
+    font-size: 50px;
+    font-weight: light;
+    margin-top: 250px;
+    text-align: center;
+    margin-left: 0px;
+
+}
+
+.photo {
+    border-radius: 50%; 
+ }
+ 
+ .photoContainer {
+     width: 250px;
+     height: 250px;
+     border-radius: 270px;
+     position: relative;
+     margin-top: 50px;
+   
+
+ }
+
+.bodyText {
+    color: white;
+    font-size: 18px;
+    font-weight: light;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    animation: fadeIn 12s;
+    letter-spacing: 0px;
+}
+
+.linkText {
+    cursor: pointer;
+}
+
+.sectionContainer {
+    margin-top: 400px;
+}
+
+/* GLOBAL STYLES */
+  
+  /* DEMO-SPECIFIC STYLES */
+.typewriter div {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    visibility: hidden; /* Hide content initially */
+    animation: 
+      typing 3s steps(30, end) forwards,
+      blink-caret .5s step-end infinite;
+}
+
+.typewriter div:first-child {
+    visibility: visible; /* First line is visible */
+}
+
+.typewriter div:nth-child(2) {
+    animation-delay: 3s; /* Delay the start of the second line */
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; visibility: visible; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@media (max-width: 450px) {
+    .headingText {
+        font-size: 24px;
+        margin-top: 150px;
+    }
+    .bodyText {
+        font-size: 16px;
+        margin-left: 50px;
+        margin-right: 50px;
+        line-height: 2;
+    }
+    
+    .sectionContainer {
+        margin-top: 300px;
+    }
+    
+}

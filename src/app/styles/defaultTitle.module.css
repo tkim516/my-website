@@ -1,0 +1,14 @@
+.defaultTitle {
+    color: white;
+    margin-left: 10%;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.titleUnderline {
+    background: white;
+    height: 1px;
+    width: 200px;
+    margin-left: 9%;
+}
