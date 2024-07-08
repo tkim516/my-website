@@ -27,7 +27,7 @@ function MyApp({}) {
                 className={`${lusitana.className} ${pageStyles.headingText} ${pageStyles.typewriter}`}
               >
                 <div>
-                  Hi, I'm <span className="text-customYellow">Tyler Kim</span>.
+                  Hi, I&apos;m <span className="text-customYellow">Tyler Kim</span>.
                 </div>
                 <div>Welcome to my website!</div>
               </div>
