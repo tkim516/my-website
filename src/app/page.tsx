@@ -50,6 +50,10 @@ function MyApp({}) {
               </ScrollLink>
               !
             </div>
+            <div className={pageStyles.iconContainer}>
+              {/*<div className={pageStyles.mouseIcon}></div>*/}
+              <div className={pageStyles.scrollIcon}></div>
+            </div>
           </div>
         </main>
         <div className={pageStyles.sectionContainer}>
