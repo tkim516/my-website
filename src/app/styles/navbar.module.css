@@ -1,16 +1,28 @@
 .navbarContainer {
     z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.iconContainer {
+    color: white;
+    display: none;
+    position: relative;
+    left: 30%;
 }
 
 .linkText {
     cursor: pointer;
 }
 
+
 @media (max-width: 800px) {
     .navbarContainer {
         font-size: 14px;
-    }
-    
+    }    
 }
 
 @media (max-width: 600px) {
@@ -31,4 +43,72 @@
         /*margin-right: 50px;*/
     }
     
+}
+
+@media (max-width: 450px) {
+    .navbarContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 10vh;
+    }
+
+    .navbarContainer.active {
+        position: absolute;
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        right: 0;
+        text-align: center;
+    }
+
+    .iconContainer {
+        display: flex;
+    }
+
+    .menuIcon {
+        display: flex;
+    }
+
+    .menuIcon.active {
+        display: none;
+    }
+
+    .closeIcon {
+        display: none;
+    }
+
+    .closeIcon.active {
+        display: flex;
+    }
+
+    .linkContainer {
+        margin-top: 70px;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .linkText {
+        display: none;
+    }
+
+    .linkText.active {
+        display: flex;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .menuIcon {
+        position: absolute;
+        top: 2.5vh;
+        margin-left: 55vw;
+    }
+
+    .closeIcon.active {
+        position: absolute;
+        top: 2.5vh;
+        margin-left: 55vw;
+    }
 }

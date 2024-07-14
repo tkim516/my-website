@@ -1,4 +1,3 @@
-import Navbar from "../components/MobileMenu";
 import Background from "../components/background";
 import Navlink from "../components/Navbar";
 import RandomQuote from "../components/random-quote";

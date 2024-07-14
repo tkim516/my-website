@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Navbar from "./components/MobileMenu";
 import Link from "next/link";
 import Background from "./components/background";
 import Head from "next/head";
