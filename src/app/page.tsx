@@ -35,8 +35,8 @@ function MyApp({}) {
               className={`${montserrat.className} ${pageStyles.bodyText} mt-4 text-white font-light text-xs sm:text-sm md:text-base lg:text-lg`}
             >
               I’m currently interning at Hewlett Packard Enterprise.<br></br>
-              <br></br>I also volunteer as a Product Manager for Hack4Impact,
-              where I lead a team to build custom software solutions for
+              <br></br>I also volunteer as the Director of Product and as a Software Engineer at Hack4Impact,
+              where I lead teams to build custom software solutions for
               nonprofits. You can learn more about our current project{" "}
               <ScrollLink
                 to="projects"
