@@ -12,7 +12,7 @@ import pageStyles from "../styles/about.module.css"
 
 export default function BioContainer() {
     
-    const bodyText = `I currently volunteer as the Director of Product and as a Software Engineer at Hack4Impact, leading teams to build custom software solutions for nonprofits.
+    const bodyText = `I currently volunteer as the Director of Product and as a Software Engineer at Hack4Impact, where I lead teams to build custom software solutions for nonprofits.
     
                       This summer, I am interning as a Product Manager at Hewlett Packard Enterprise. I previously interned as a Product Manager at Productiv, a SaaS company that integrates data from IT, procurement, and finance to empower business leaders to make well-informed decisions. 
                       
