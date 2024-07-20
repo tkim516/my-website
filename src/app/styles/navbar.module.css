@@ -7,6 +7,10 @@
     padding-bottom: 2vh;
 }
 
+.navbarShadow {
+    box-shadow: 0px 20px 40px 0px black;
+}
+
 .iconContainer {
     color: white;
     display: none;
@@ -46,11 +50,15 @@
 }
 
 @media (max-width: 450px) {
+    .navbarShadow {
+        box-shadow: 0px 5px 40px 5px black;
+    }
+    
     .navbarContainer {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        height: 10vh;
+        height: 8vh;
     }
 
     .navbarContainer.active {
@@ -83,7 +91,7 @@
     }
 
     .linkContainer {
-        margin-top: 70px;
+        margin-top: 50px;
         text-align: center;
         justify-content: center;
         justify-items: center;
@@ -102,13 +110,13 @@
 
     .menuIcon {
         position: absolute;
-        top: 2.5vh;
+        top: 1vh;
         margin-left: 55vw;
     }
 
     .closeIcon.active {
         position: absolute;
-        top: 2.5vh;
+        top: 1vh;
         margin-left: 55vw;
     }
 }

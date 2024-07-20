@@ -6,6 +6,7 @@ import {
     Image
   } from "@chakra-ui/react";
 import { montserrat, lato, lusitana } from '../ui/fonts'
+import styles from "../styles/projects.module.css";
 
 export default function ProjectContainer() {
     
@@ -14,35 +15,23 @@ export default function ProjectContainer() {
     // need to set image 
 
     return(
-        <Box 
-          bg={"#272727"} 
-          color={"white"} 
-          width={"75%"} 
-          height={"750px"}
-          borderRadius={"40px"} 
-          mt={"50px"}
-          mb={"50px"} 
-        > {/* black background and white text*/}
+        <Box
+          className={styles.bodyContainer}> {/* black background and white text*/}
           <Box 
-            className={lusitana.className}
-            display={"flex"}
-            justifyContent={"center"}
-            fontSize={"30px"}
-            mt={"50px"}
+            className={`${styles.titleContainer} ${lusitana.className}`}
             >
-            <Text >
+            <Text className={styles.titleText}>
                 {titleText}
             </Text>
           </Box>
-          <Box display={"flex"} justifyContent={"center"} mt={"50px"}>            
+          <Box className={styles.imageContainer} display={"flex"} justifyContent={"center"} mt={"50px"}>            
             <Box color={"white"} border={"1px solid"} width={"auto"} borderRadius={"5px"}>
               <Image
               src="/beaver-brigade-desktop.png"
               alt="Image of application"
-              width={"600px"}
+              width={["280px", "600px"]}
               //height={"600px"}
-              borderRadius={"5px 5px 2.5px 2.5px"}
-              
+              borderRadius={"5px 5px 2.5px 2.5px"}            
               />
             </Box>
             {/* leave out for now
@@ -65,14 +54,9 @@ export default function ProjectContainer() {
             */}
           </Box>
           <Box 
-            className={lato.className}
-            display={"flex"}
-            justifyContent={"left"}
-            ml={"50px"}
-            mr={"50px"}
-            mt={"50px"}
+            className={`${styles.bodyTextContainer} ${lato.className}`}
             >
-            <Text>
+            <Text className={styles.bodyText}>
                 {bodyText}
             </Text>
           </Box>

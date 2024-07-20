@@ -1,0 +1,40 @@
+.bodyContainer {
+  background-color: #272727;
+  width: 85%;
+  height: 100%;
+  border-radius: 20px;
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.bodyTextContainer {
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+  .bodyContainer {
+    margin-top: 30px;
+  }
+
+  .bodyTextContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px
+  }
+
+
+}

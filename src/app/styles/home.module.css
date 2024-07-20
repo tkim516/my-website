@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-qww.topRowContainer {
+q.topRowContainer {
     display: flex;
     align-items: center;
 
@@ -103,49 +103,13 @@ qww.topRowContainer {
     color: white;
 }
 
-.mouseIcon {
-	width: 40px;
-	height: 72px;
-	border: 0.5px solid white;
-	border-radius: 60px;
-	position: relative;
-    animation: fadeIn 20s;
-	&::before {
-		content: '';
-		width: 12px;
-		height: 12px;
-		position: absolute;
-		top: 10px;
-		left: 50%;
-		transform: translateX(-50%);
-		background-color: white;
-		border-radius: 50%;
-		opacity: 1;
-		animation: wheel 3s infinite;
-		-webkit-animation: wheel 3s infinite;
-	}
-}
-
-@keyframes wheel {
-	to {
-		opacity: 0;
-		top: 40px;
-	}
-}
-
-@-webkit-keyframes wheel {
-	to {
-		opacity: 0;
-		top: 40px;
-	}
-}
-
 .scrollIcon {
 	width: 60px;
 	height: 60px;
 	border: 1px solid white;
 	border-radius: 50%;
 	position: relative;
+    cursor: pointer;
 	animation: down 1.5s infinite, fadeIn 20s;
 	-webkit-animation: down 1.5s infinite, fadeIn 20s;
 	&::before {
@@ -187,18 +151,23 @@ qww.topRowContainer {
 
 @media (max-width: 450px) {
     .headingText {
-        font-size: 24px;
+        font-size: 26px;
         margin-top: 150px;
     }
     .bodyText {
-        font-size: 16px;
-        margin-left: 50px;
-        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 40px;
+        margin-right: 40px;
         line-height: 2;
+    }
+
+    .iconContainer {
+        margin-top: 20%;
     }
     
     .sectionContainer {
-        margin-top: 150px;
+        margin-top: 15vh;
     }
     
 }

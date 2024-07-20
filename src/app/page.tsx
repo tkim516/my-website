@@ -41,7 +41,7 @@ function MyApp({}) {
               <ScrollLink
                 to="projects"
                 className={`${pageStyles.linkText} text-customYellow underline`}
-                smooth={false}
+                smooth={true}
                 duration={100}
                 offset={-80}
               >
@@ -51,7 +51,9 @@ function MyApp({}) {
             </div>
             <div className={pageStyles.iconContainer}>
               {/*<div className={pageStyles.mouseIcon}></div>*/}
-              <div className={pageStyles.scrollIcon}></div>
+              <ScrollLink to="about" smooth={true} duration={100} offset={-80}>
+                <div className={pageStyles.scrollIcon}></div>
+              </ScrollLink>
             </div>
           </div>
         </main>

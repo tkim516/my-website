@@ -24,10 +24,11 @@ export default function Navlink() {
   }
 
   return (
-    <div className={`${showMobileMenu && styles.active}`}>
+    <div className={`${styles.navbarShadow} ${showMobileMenu && styles.active}`}>
         <div className="fixed w-full bg-black z-50">
           <div className={`
-                ${styles.navbarContainer} 
+                ${styles.navbarContainer}
+                ${styles.navbarShadow} 
                 ${showMobileMenu && styles.active}`}>
             <div className={styles.iconContainer}>
               <div className={`${styles.menuIcon} ${showMobileMenu && styles.active}`} onClick={handleShowMobileMenu}>
@@ -37,7 +38,7 @@ export default function Navlink() {
                 <CloseIcon boxSize={6}></CloseIcon>
               </div>
             </div>
-              <ScrollLink className={`${styles.linkContainer} link`} to="homepage" smooth={false} duration={100} offset={-80} onClick={handleHideMobileMenu}>
+              <ScrollLink className={`${styles.linkContainer} link`} to="homepage" smooth={true} duration={100} offset={-80} onClick={handleHideMobileMenu}>
                   <div className={`
                         ${lato.className} 
                         ${styles.linkText} 
@@ -56,7 +57,7 @@ export default function Navlink() {
                       About
                   </div>
               </ScrollLink> 
-              <ScrollLink className={`${styles.linkContainer} link`} to="projects" smooth={false} duration={100} offset={-80} onClick={handleHideMobileMenu}>
+              <ScrollLink className={`${styles.linkContainer} link`} to="projects" smooth={true} duration={100} offset={-80} onClick={handleHideMobileMenu}>
                   <div className={`
                         ${lato.className} 
                         ${styles.linkText} 

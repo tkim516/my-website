@@ -21,9 +21,6 @@ export default function BioContainer() {
                        I’m currently studying Industrial Engineering and Software Development at Cal Poly, San Luis Obispo.`;           
 
     return(
-        <Box className={pageStyles.mainContainer}
-          //className={pageStyles.bodyContainer} 
-        > {/* black background and white text*/}
           <Box className={pageStyles.bodyContainer}>            
             <Box className={pageStyles.profileImageContainer}>
               <Image
@@ -53,7 +50,6 @@ export default function BioContainer() {
               </Box>
           </Box>
           </Box>  
-        </Box>
     )
 };
 
