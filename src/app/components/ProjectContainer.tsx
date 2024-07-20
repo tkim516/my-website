@@ -3,7 +3,8 @@ import {
     Text,
     Flex,
     Button,
-    Image
+    Image,
+    Link
   } from "@chakra-ui/react";
 import { montserrat, lato, lusitana } from '../ui/fonts'
 import styles from "../styles/projects.module.css";
@@ -56,9 +57,30 @@ export default function ProjectContainer() {
           <Box 
             className={`${styles.bodyTextContainer} ${lato.className}`}
             >
-            <Text className={styles.bodyText}>
-                {bodyText}
+            <Text className={lusitana.className} fontSize={"24px"} mb={"10px"}>
+              Description
             </Text>
+            <Text className={styles.bodyText}>
+              I led and managed a team of 16 developers and designers to build an event and volunteer management platform for the SLO Beaver Brigade. 
+              You can check out the live application&nbsp;
+              <a href="https://slo-beaver-brigade-livid.vercel.app/" className={"text-customYellow underline"}>
+                here
+              </a>
+              !
+            </Text>
+            <Text className={lusitana.className} fontSize={"24px"} mt={"30px"} mb={"10px"}>
+              Features
+            </Text>
+            <div className={styles.featureList} style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', justifyItems: "left", alignItems: "center" }}>
+              <div>Automated volunteer hour tracking</div>
+              <div>Digital waiver that reduced paperwork</div>
+              <div>Volunteering groups and invite-only events</div>
+              <div>Seamless event registration process</div>
+              <div>Dashboard for event management</div>
+              <div>Automated emailing for upcoming events</div>   
+              <div>Calendar that syncs to Google and Outlook</div>
+              <div>Mailchimp newsletter integration</div>
+            </div>
           </Box>
         </Box>
     )

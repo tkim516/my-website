@@ -4,7 +4,6 @@
     100% { opacity: 1; }
   }
 
-
 .bodyContainer {
     display: flex;
     flex-direction: column;
@@ -12,10 +11,9 @@
     text-align: center;
 }
 
-q.topRowContainer {
+.topRowContainer {
     display: flex;
     align-items: center;
-
 }
 
 .headingText {
@@ -32,11 +30,11 @@ q.topRowContainer {
  }
  
  .photoContainer {
-     width: 250px;
-     height: 250px;
-     border-radius: 270px;
-     position: relative;
-     margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 270px;
+    position: relative;
+    margin-top: 50px;
  }
 
 .bodyText {
@@ -55,7 +53,7 @@ q.topRowContainer {
 }
 
 .sectionContainer {
-    margin-top: 100px;
+    margin-top: 30vh;
 }
 
 /* GLOBAL STYLES */
@@ -167,7 +165,7 @@ q.topRowContainer {
     }
     
     .sectionContainer {
-        margin-top: 15vh;
+        margin-top: 25vh;
     }
     
 }
