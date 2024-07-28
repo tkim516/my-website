@@ -167,5 +167,29 @@
     .sectionContainer {
         margin-top: 25vh;
     }
+
+    .scrollIcon {
+        width: 60px;
+        height: 60px;
+        border: 1px solid white;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        animation: down 1.5s infinite, fadeIn 20s;
+        -webkit-animation: down 1.5s infinite, fadeIn 20s;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            border-left: 1px solid white;
+            border-bottom: 1px solid white;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
     
+    
+
 }
