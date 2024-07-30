@@ -175,8 +175,10 @@
     }
 
     .scrollIcon::before {
-        width: 18px; /* Adjust size of the arrow */
+        width: 18px; /*Adjust size of the arrow */
         height: 18px;
-        border-width: 1px; /* Ensure arrow borders are visible */
+        border-left: 1px solid white;
+        border-bottom: 1px solid white;
+
     }
 }
