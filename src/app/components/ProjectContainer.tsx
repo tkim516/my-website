@@ -68,6 +68,7 @@ export default function ProjectContainer() {
               </a>
               !
             </Text>
+            {/* Commenting out Features text for now
             <Text className={lusitana.className} fontSize={"24px"} mt={"30px"} mb={"10px"}>
               Features
             </Text>
@@ -81,6 +82,7 @@ export default function ProjectContainer() {
               <div>Calendar that syncs to Google and Outlook</div>
               <div>Mailchimp newsletter integration</div>
             </div>
+            */}
           </Box>
         </Box>
     )
