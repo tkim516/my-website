@@ -28,7 +28,7 @@ function MyApp({}) {
                 <div>
                   Hi, I&apos;m <span className="text-customYellow">Tyler Kim</span>.
                 </div>
-                <div>Welcome to my website!</div>
+                <div>Welcome to my website.</div>
               </div>
             </div>
             <div
@@ -47,7 +47,7 @@ function MyApp({}) {
               >
                 here
               </ScrollLink>
-              !
+              .
             </div>
             <div className={pageStyles.iconContainer}>
               {/*<div className={pageStyles.mouseIcon}></div>*/}

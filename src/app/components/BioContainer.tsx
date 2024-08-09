@@ -16,11 +16,11 @@ export default function BioContainer() {
     
                       This summer, I am interning as a Product Manager at Hewlett Packard Enterprise. I previously interned as a Product Manager at Productiv, a SaaS company that integrates data from IT, procurement, and finance to empower business leaders to make well-informed decisions. 
                       
-                      As an undergraduate at Cal Poly, I spent a year working at the Center for Leadership, where I led workshops on personal and organizational leadership.` 
+                      As an undergraduate at Cal Poly, I spent a year working at the Center for Leadership, where I facilitated workshops on personal and organizational leadership.` 
     
-    const bodyText2 = `I am passionate about product management, programming, and UX design. I am also particularly interested in organizational leadership and understanding the qualities that define great leaders.
+    const bodyText2 = `I am passionate about product management, programming, and UX design.
                        
-                      In my free time, I enjoy playing basketball, golf, and poker, as well as learning about programming and reading books.`
+                      In my free time, I enjoy playing basketball, golf, and poker, as well as programming and reading.`
     return(
           <Box className={pageStyles.bodyContainer}>            
             <Box className={pageStyles.profileImageContainer}>
