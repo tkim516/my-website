@@ -50,9 +50,9 @@ export default function BioContainer() {
                 </Box>         
               </Box>
               <Box className={pageStyles.buttonContainer}>
-                <a href="/Tyler-Kim-Resume.pdf" download>
+                <a href="/Tyler-Kim-PM-Resume.doc" download>
                   <button className={styles.defaultButton}>
-                    My resume
+                    Product Manager Resume
                   </button>
                 </a>
               </Box>
